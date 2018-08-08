@@ -8,8 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/amqp" />
+            <option value="$PROJECT_DIR$/amqp/project" />
             <option value="$PROJECT_DIR$/finagle" />
             <option value="$PROJECT_DIR$/finagle/project" />
+            <option value="$PROJECT_DIR$/java8Compat" />
+            <option value="$PROJECT_DIR$/java8Compat/project" />
             <option value="$PROJECT_DIR$/jwt" />
             <option value="$PROJECT_DIR$/jwt/project" />
             <option value="$PROJECT_DIR$/mariaDb" />
@@ -23,6 +27,10 @@
             <option value="$PROJECT_DIR$/postgres" />
             <option value="$PROJECT_DIR$/postgres/project" />
             <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/scalaLogging" />
+            <option value="$PROJECT_DIR$/scalaLogging/project" />
+            <option value="$PROJECT_DIR$/scalajHttp" />
+            <option value="$PROJECT_DIR$/scalajHttp/project" />
             <option value="$PROJECT_DIR$/slick" />
             <option value="$PROJECT_DIR$/slick/project" />
           </set>

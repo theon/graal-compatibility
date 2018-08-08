@@ -5847,151 +5847,55 @@
 [debug] == resolving dependencies finagle#finagle$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.8.4!jackson-module-paranamer.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#finagle-toggle_2.12;6.44.0!finagle-toggle_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-codec-http;4.1.9.Final!netty-codec-http.jar(src)
+[debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#finagle-toggle_2.12;6.44.0!finagle-toggle_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#finagle-http_2.12;6.44.0!finagle-http_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.6!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-paranamer;2.8.4!jackson-module-paranamer.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-registry_2.12;6.43.0!util-registry_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
 [debug] 	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#util-security_2.12;6.43.0!util-security_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-tunable_2.12;6.43.0!util-tunable_2.12.jar(src)
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.8.4!jackson-annotations.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] com.twitter#util-stats_2.12;6.43.0!util-stats_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.8.4!jackson-databind.jar(src)
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] 	[NOT REQUIRED] com.twitter#util-stats_2.12;6.43.0!util-stats_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-codec;4.1.9.Final!netty-codec.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-resolver;4.1.9.Final!netty-resolver.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] com.twitter#util-security_2.12;6.43.0!util-security_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-hashing_2.12;6.43.0!util-hashing_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-collection_2.12;6.43.0!util-collection_2.12.jar(src)
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
 [debug] 	[NOT REQUIRED] io.netty#netty-buffer;4.1.9.Final!netty-buffer.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-transport;4.1.9.Final!netty-transport.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-handler;4.1.9.Final!netty-handler.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-common;4.1.9.Final!netty-common.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-codec_2.12;6.43.0!util-codec_2.12.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 	[NOT REQUIRED] io.netty#netty-codec-socks;4.1.9.Final!netty-codec-socks.jar(src)
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
 [debug] 	[NOT REQUIRED] com.google.guava#guava;19.0!guava.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty-codec-socks;4.1.9.Final!netty-codec-socks.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-lint_2.12;6.43.0!util-lint_2.12.jar(src)
-[debug] 	[NOT REQUIRED] io.netty#netty;3.10.1.Final!netty.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] com.twitter#util-app_2.12;6.43.0!util-app_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-cache_2.12;6.43.0!util-cache_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.netty#netty;3.10.1.Final!netty.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#util-app_2.12;6.43.0!util-app_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.3.4!caffeine.jar(src)
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (20ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
 [debug] 	[NOT REQUIRED] io.netty#netty-transport-native-epoll;4.1.9.Final!netty-transport-native-epoll.jar(src)
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 	[NOT REQUIRED] com.twitter#util-function_2.12;6.43.0!util-function_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#util-logging_2.12;6.43.0!util-logging_2.12.jar(src)
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] 	[NOT REQUIRED] com.twitter#util-core_2.12;6.43.0!util-core_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.twitter#finagle-netty4_2.12;6.44.0!finagle-netty4_2.12.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#util-jvm_2.12;6.43.0!util-jvm_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#util-function_2.12;6.43.0!util-function_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#util-logging_2.12;6.43.0!util-logging_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#finagle-netty4_2.12;6.44.0!finagle-netty4_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#util-core_2.12;6.43.0!util-core_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#finagle-http2_2.12;6.44.0!finagle-http2_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-codec-http2;4.1.9.Final!netty-codec-http2.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.8.4!jackson-core.jar(src)
-[debug] settings loaded (22ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.12;2.8.4!jackson-module-scala_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#finagle-core_2.12;6.44.0!finagle-core_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-handler-proxy;4.1.9.Final!netty-handler-proxy.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] com.twitter#finagle-base-http_2.12;6.44.0!finagle-base-http_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#finagle-netty4-http_2.12;6.44.0!finagle-netty4-http_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.6!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] com.twitter#finagle-base-http_2.12;6.44.0!finagle-base-http_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default ivy user dir defined: set to /Users/julian/.ivy2
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] settings loaded (22ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to /Users/julian/.ivy2/cache
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (17ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/Users/julian/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.0/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (13ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (10ms)
-[debug] 	default cache: /Users/julian/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] :: resolution report :: resolve 1728ms :: artifacts dl 70ms
+[debug] :: resolution report :: resolve 1063ms :: artifacts dl 20ms
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT compile produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-compile.xml
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT runtime produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-runtime.xml
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT test produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-test.xml
@@ -6003,4 +5907,4 @@
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT plugin produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-plugin.xml
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT pom produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-pom.xml
 [debug] 	report for finagle#finagle$sources;0.1.0-SNAPSHOT scala-tool produced in /Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/resolution-cache/reports/finagle-finagle$sources-scala-tool.xml
-[debug] 	resolve done (1728ms resolve - 70ms download)
+[debug] 	resolve done (1063ms resolve - 20ms download)

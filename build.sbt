@@ -1,7 +1,7 @@
 name := "graal-compatibility"
 scalaVersion := "2.12.3"
 
-import Dependencies._
+import Dependencies.{scalaLogging, _}
 
 val postgres = Project("postgres", file("./postgres")).settings(libraryDependencies ++= Seq(
   postgresClient
@@ -31,6 +31,24 @@ val playJson = Project("playJson", file("./play-json")).settings(libraryDependen
   Dependencies.playJson
 ))
 
+val amqp = Project("amqp", file("./amqp")).settings(libraryDependencies ++= Seq (
+  Dependencies.amqp
+))
+
+val java8Compat = Project("java8Compat", file("./java8Compat")).settings(libraryDependencies ++= Seq (
+  Dependencies.java8Compat
+))
+
+
+val scalaLogging = Project("scalaLogging", file("./scalaLogging")).settings(libraryDependencies ++= Seq (
+  Dependencies.scalaLogging,
+  logBack
+))
+
+val scalajHttp = Project("scalajHttp", file("./scalajHttp")).settings(libraryDependencies ++= Seq (
+  Dependencies.scalajHttp
+))
+
 val other = Project("other", file("./other")).settings(libraryDependencies ++= Seq(
   jodaTime,
   jodaConvert,
@@ -48,7 +66,7 @@ val other = Project("other", file("./other")).settings(libraryDependencies ++= S
 ))
 
 lazy val root = (project in file("."))
-  .aggregate(mariaDb, postgres, mysql, slick, finagle, jwt, playJson, other)
+  .aggregate(mariaDb, postgres, mysql, slick, finagle, jwt, playJson, amqp, java8Compat, scalaLogging, scalajHttp, other)
   .settings(
     publish := { } // do not publish a JAR for the root project
   )

@@ -73,10 +73,10 @@ object Dependencies {
   val jacksonDataformatCbor = "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % v.jackson // Depended on by playJson
   val jackson               = Seq(jacksonCore, jacksonDatabind, jacksonAnnotation, jacksonDataformatCbor)
 
-  val amqp              = "com.rabbitmq"               % "amqp-client"                    % "4.1.0"
-  val java8Compat       = "org.scala-lang.modules"     %% "scala-java8-compat"            % "0.8.0"
-  val scalaLogging      = "com.typesafe.scala-logging" %% "scala-logging"                 % "3.7.0"
-  val jwt               = "com.pauldijou"              %% "jwt-core"                      % "0.14.1" // Done
+  val amqp              = "com.rabbitmq"               % "amqp-client"                    % "4.1.0" // Done
+  val java8Compat       = "org.scala-lang.modules"     %% "scala-java8-compat"            % "0.8.0" // Done
+  val scalaLogging      = "com.typesafe.scala-logging" %% "scala-logging"                 % "3.7.0" // Done
+  val jwt               = "com.pauldijou"              %% "jwt-core"                      % "0.14.1"// Done
   val scalajHttp        = "org.scalaj"                 %% "scalaj-http"                   % "2.3.0"
   val evoInflector      = "org.atteo"                  % "evo-inflector"                  % "1.2"
   val logBack           = "ch.qos.logback"             % "logback-classic"                % "1.1.7"

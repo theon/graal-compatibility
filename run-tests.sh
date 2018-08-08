@@ -80,6 +80,11 @@ CLASSPATHS="\
 :/Users/julian/.ivy2/cache/com.pauldijou/jwt-core-impl_2.12/jars/jwt-core-impl_2.12-0.14.1.jar\
 :/Users/julian/.ivy2/cache/com.pauldijou/jwt-core_2.12/jars/jwt-core_2.12-0.14.1.jar\
 :/Users/julian/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.6.8.jar\
+:/Users/julian/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar\
+:/Users/julian/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.12/bundles/scala-logging_2.12-3.7.0.jar\
+:/Users/julian/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar\
+:/Users/julian/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar\
+:/Users/julian/.ivy2/cache/org.scalaj/scalaj-http_2.12/jars/scalaj-http_2.12-2.3.0.jar\
 :/Users/julian/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar:"
 
 # Project packages
@@ -91,9 +96,12 @@ finagle="/Users/julian/Projects/graal-compatibility/finagle/target/scala-2.12/fi
 slick="/Users/julian/Projects/graal-compatibility/slick/target/scala-2.12/slick_2.12-0.1.0-SNAPSHOT.jar"
 jwt="/Users/julian/Projects/graal-compatibility/jwt/target/scala-2.12/jwt_2.12-0.1.0-SNAPSHOT.jar"
 playJson="/Users/julian/Projects/graal-compatibility/play-json/target/scala-2.12/playjson_2.12-0.1.0-SNAPSHOT.jar"
+java8Compat="/Users/julian/Projects/graal-compatibility/java8Compat/target/scala-2.12/java8compat_2.12-0.1.0-SNAPSHOT.jar"
+scalaLogging="/Users/julian/Projects/graal-compatibility/scalaLogging/target/scala-2.12/scalalogging_2.12-0.1.0-SNAPSHOT.jar"
+scalajHttp="/Users/julian/Projects/graal-compatibility/scalajHttp/target/scala-2.12/scalajhttp_2.12-0.1.0-SNAPSHOT.jar"
 
 # TESTING
-currentlyTesting=$playJson
+currentlyTesting=$slick
 
 echo -e "${RED}Packaging...${NC}"
 # sbt clean
@@ -101,7 +109,7 @@ sbt "package"
 echo
 echo -e "${RED}Building...${NC}"
 rm -rf main
-native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main #-H:+ReportUnsupportedElementsAtRuntime
+native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main -H:+ReportUnsupportedElementsAtRuntime
 echo
 echo -e "${RED}Running...${NC}"
 ./main

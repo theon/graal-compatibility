@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/finagle.iml" filepath="$PROJECT_DIR$/.idea/modules/finagle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/finagle-build.iml" filepath="$PROJECT_DIR$/.idea/modules/finagle-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java8Compat.iml" filepath="$PROJECT_DIR$/.idea/modules/java8Compat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java8Compat-build.iml" filepath="$PROJECT_DIR$/.idea/modules/java8Compat-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jwt.iml" filepath="$PROJECT_DIR$/.idea/modules/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jwt-build.iml" filepath="$PROJECT_DIR$/.idea/modules/jwt-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mariaDb.iml" filepath="$PROJECT_DIR$/.idea/modules/mariaDb.iml" />
@@ -18,6 +22,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/postgres-build.iml" filepath="$PROJECT_DIR$/.idea/modules/postgres-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLogging.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLogging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLogging-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLogging-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalajHttp.iml" filepath="$PROJECT_DIR$/.idea/modules/scalajHttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalajHttp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalajHttp-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/slick.iml" filepath="$PROJECT_DIR$/.idea/modules/slick.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/slick-build.iml" filepath="$PROJECT_DIR$/.idea/modules/slick-build.iml" />
     </modules>
