@@ -2,8 +2,29 @@ name := "graal-compatibility"
 scalaVersion := "2.12.3"
 
 import Dependencies.{scalaLogging, _}
+val dependencies = taskKey[Seq[File]]("copy dependencies")
 
-val postgres = Project("postgres", file("./postgres")).settings(libraryDependencies ++= Seq(
+
+def myProject(name: String) = Project(name, file(s"./$name")).settings(
+  managedDirectory := target.value / "lib_managed",
+  dependencies := {
+    val baseDir = baseDirectory.value
+    val managedDir = managedDirectory.value
+    dependencyClasspath.in(Compile).value.toVector.flatMap { dep =>
+      dep.data.relativeTo(baseDir).orElse {
+        // For some reason sbt sometimes decides to use the scala-library from `~/.sbt/boot` (which is outside of the project dir)
+        // As a workaround we copy the file in lib_managed and use the copy instead (shouldn't cause name collisions)
+        val inManaged = managedDir / dep.data.name
+        IO.copy(Seq(dep.data → inManaged))
+        inManaged.relativeTo(baseDir)
+      }
+    }
+  }
+)
+
+
+
+val postgres = myProject("postgres").settings(libraryDependencies ++= Seq(
   postgresClient
 ))
 
