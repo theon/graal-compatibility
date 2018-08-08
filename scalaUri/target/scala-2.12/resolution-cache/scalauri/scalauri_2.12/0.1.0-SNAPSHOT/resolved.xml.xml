@@ -4,7 +4,7 @@
 		module="scalauri_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180808172710"
+		publication="20180808181826"
 	>
 		<description>
 		scalaUri
