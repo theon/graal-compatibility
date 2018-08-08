@@ -73,20 +73,20 @@ object Dependencies {
   val jacksonDataformatCbor = "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % v.jackson // Depended on by playJson
   val jackson               = Seq(jacksonCore, jacksonDatabind, jacksonAnnotation, jacksonDataformatCbor)
 
-  val amqp              = "com.rabbitmq"               % "amqp-client"                    % "4.1.0" // Done
-  val java8Compat       = "org.scala-lang.modules"     %% "scala-java8-compat"            % "0.8.0" // Done
-  val scalaLogging      = "com.typesafe.scala-logging" %% "scala-logging"                 % "3.7.0" // Done
-  val jwt               = "com.pauldijou"              %% "jwt-core"                      % "0.14.1"// Done
-  val scalajHttp        = "org.scalaj"                 %% "scalaj-http"                   % "2.3.0"
-  val evoInflector      = "org.atteo"                  % "evo-inflector"                  % "1.2"
-  val logBack           = "ch.qos.logback"             % "logback-classic"                % "1.1.7"
-  val snakeYML          = "org.yaml"                   % "snakeyaml"                      % "1.19"
-  val logstash          = "net.logstash.logback"       % "logstash-logback-encoder"       % "4.7"
-  val librato           = "com.librato.metrics"        % "librato-java"                   % "2.1.0"
-  val jettyServer       = "org.eclipse.jetty"          % "jetty-server"                   % "9.3.0.v20150612"
-  val scalaUri          = "io.lemonlabs"               %% "scala-uri"                     % "1.1.1"
-  val parserCombinators = "org.scala-lang.modules"     %% "scala-parser-combinators"      % "1.0.4"
-  val apacheCommons     = "commons-lang"               % "commons-lang"                   % "2.6"
+  val amqp              = "com.rabbitmq"               % "amqp-client"                    % "4.1.0"   // Done
+  val java8Compat       = "org.scala-lang.modules"     %% "scala-java8-compat"            % "0.8.0"   // Done
+  val scalaLogging      = "com.typesafe.scala-logging" %% "scala-logging"                 % "3.7.0"   // Done
+  val jwt               = "com.pauldijou"              %% "jwt-core"                      % "0.14.1"  // Done
+  val scalajHttp        = "org.scalaj"                 %% "scalaj-http"                   % "2.3.0"   // Done
+  val evoInflector      = "org.atteo"                  % "evo-inflector"                  % "1.2"     // Done
+  val logBack           = "ch.qos.logback"             % "logback-classic"                % "1.1.7"   // Done
+  val snakeYML          = "org.yaml"                   % "snakeyaml"                      % "1.19"    // Done
+  val logstash          = "net.logstash.logback"       % "logstash-logback-encoder"       % "4.7"     // Done
+  val librato           = "com.librato.metrics"        % "librato-java"                   % "2.1.0"   // Done
+  val jettyServer       = "org.eclipse.jetty"          % "jetty-server"                   % "9.3.0.v20150612" // Done
+  val scalaUri          = "io.lemonlabs"               %% "scala-uri"                     % "1.1.1"   // Done
+  val parserCombinators = "org.scala-lang.modules"     %% "scala-parser-combinators"      % "1.0.4"   // Done
+  val apacheCommons     = "commons-lang"               % "commons-lang"                   % "2.6"     // Done
   val microMeter        = "io.micrometer"              % "micrometer-registry-prometheus" % "1.0.6"
   val jooq = Vector(
     "org.jooq" % "jooq"        % "3.11.0",

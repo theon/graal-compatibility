@@ -10,18 +10,28 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/amqp" />
             <option value="$PROJECT_DIR$/amqp/project" />
+            <option value="$PROJECT_DIR$/evoInflector" />
+            <option value="$PROJECT_DIR$/evoInflector/project" />
             <option value="$PROJECT_DIR$/finagle" />
             <option value="$PROJECT_DIR$/finagle/project" />
             <option value="$PROJECT_DIR$/java8Compat" />
             <option value="$PROJECT_DIR$/java8Compat/project" />
+            <option value="$PROJECT_DIR$/jettyServer" />
+            <option value="$PROJECT_DIR$/jettyServer/project" />
             <option value="$PROJECT_DIR$/jwt" />
             <option value="$PROJECT_DIR$/jwt/project" />
+            <option value="$PROJECT_DIR$/librato" />
+            <option value="$PROJECT_DIR$/librato/project" />
+            <option value="$PROJECT_DIR$/logstash" />
+            <option value="$PROJECT_DIR$/logstash/project" />
             <option value="$PROJECT_DIR$/mariaDb" />
             <option value="$PROJECT_DIR$/mariaDb/project" />
             <option value="$PROJECT_DIR$/mysql" />
             <option value="$PROJECT_DIR$/mysql/project" />
             <option value="$PROJECT_DIR$/other" />
             <option value="$PROJECT_DIR$/other/project" />
+            <option value="$PROJECT_DIR$/parserCombinators" />
+            <option value="$PROJECT_DIR$/parserCombinators/project" />
             <option value="$PROJECT_DIR$/play-json" />
             <option value="$PROJECT_DIR$/play-json/project" />
             <option value="$PROJECT_DIR$/postgres" />
@@ -29,10 +39,14 @@
             <option value="$PROJECT_DIR$/project" />
             <option value="$PROJECT_DIR$/scalaLogging" />
             <option value="$PROJECT_DIR$/scalaLogging/project" />
+            <option value="$PROJECT_DIR$/scalaUri" />
+            <option value="$PROJECT_DIR$/scalaUri/project" />
             <option value="$PROJECT_DIR$/scalajHttp" />
             <option value="$PROJECT_DIR$/scalajHttp/project" />
             <option value="$PROJECT_DIR$/slick" />
             <option value="$PROJECT_DIR$/slick/project" />
+            <option value="$PROJECT_DIR$/snakeYML" />
+            <option value="$PROJECT_DIR$/snakeYML/project" />
           </set>
         </option>
         <option name="sbtVersion" value="1.2.0" />

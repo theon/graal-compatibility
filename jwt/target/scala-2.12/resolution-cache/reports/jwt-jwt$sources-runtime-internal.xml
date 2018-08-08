@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180808142029"/>
+		date="20180808175757"/>
 	<dependencies>
 		<module organisation="com.pauldijou" name="jwt-core_2.12">
 			<revision name="0.14.1" status="release" pubdate="20171030135447" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">

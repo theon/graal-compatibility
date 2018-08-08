@@ -49,6 +49,37 @@ val scalajHttp = Project("scalajHttp", file("./scalajHttp")).settings(libraryDep
   Dependencies.scalajHttp
 ))
 
+val evoInflector = Project("evoInflector", file("./evoInflector")).settings(libraryDependencies ++= Seq (
+  Dependencies.evoInflector
+))
+
+val snakeYML = Project("snakeYML", file("./snakeYML")).settings(libraryDependencies ++= Seq (
+  Dependencies.snakeYML,
+  Dependencies.java8Compat
+))
+
+val logstash = Project("logstash", file("./logstash")).settings(libraryDependencies ++= Seq (
+  Dependencies.logstash
+))
+
+val librato = Project("librato", file("./librato")).settings(libraryDependencies ++= Seq (
+  Dependencies.librato,
+  Dependencies.logBack
+))
+
+val jettyServer = Project("jettyServer", file("./jettyServer")).settings(libraryDependencies ++= Seq (
+  Dependencies.jettyServer
+))
+
+val scalaUri = Project("scalaUri", file("./scalaUri")).settings(libraryDependencies ++= Seq (
+  Dependencies.scalaUri
+))
+
+val parserCombinators = Project("parserCombinators", file("./parserCombinators")).settings(libraryDependencies ++= Seq (
+  Dependencies.parserCombinators
+))
+
+
 val other = Project("other", file("./other")).settings(libraryDependencies ++= Seq(
   jodaTime,
   jodaConvert,
@@ -66,7 +97,26 @@ val other = Project("other", file("./other")).settings(libraryDependencies ++= S
 ))
 
 lazy val root = (project in file("."))
-  .aggregate(mariaDb, postgres, mysql, slick, finagle, jwt, playJson, amqp, java8Compat, scalaLogging, scalajHttp, other)
+  .aggregate(
+    mariaDb,
+    postgres,
+    mysql,
+    slick,
+    finagle,
+    jwt,
+    playJson,
+    amqp,
+    java8Compat,
+    scalaLogging,
+    scalajHttp,
+    evoInflector,
+    snakeYML,
+    logstash,
+    librato,
+    jettyServer,
+    scalaUri,
+    parserCombinators,
+    other)
   .settings(
     publish := { } // do not publish a JAR for the root project
   )

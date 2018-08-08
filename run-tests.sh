@@ -85,6 +85,25 @@ CLASSPATHS="\
 :/Users/julian/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar\
 :/Users/julian/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar\
 :/Users/julian/.ivy2/cache/org.scalaj/scalaj-http_2.12/jars/scalaj-http_2.12-2.3.0.jar\
+:/Users/julian/.ivy2/cache/org.atteo/evo-inflector/jars/evo-inflector-1.2.jar\
+:/Users/julian/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.19.jar\
+:/Users/julian/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.57.jar\
+:/Users/julian/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.57.jar\
+:/Users/julian/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar\
+:/Users/julian/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar\
+:/Users/julian/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar\
+:/Users/julian/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar\
+:/Users/julian/.ivy2/cache/com.librato.metrics/librato-java/jars/librato-java-2.1.0.jar\
+:/Users/julian/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.3.0.v20150612.jar\
+:/Users/julian/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.3.0.v20150612.jar\
+:/Users/julian/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-9.3.0.v20150612.jar\
+:/Users/julian/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.3.0.v20150612.jar\
+:/Users/julian/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar\
+:/Users/julian/.ivy2/cache/io.lemonlabs/scala-uri_2.12/jars/scala-uri_2.12-1.1.1.jar\
+:/Users/julian/.ivy2/cache/org.parboiled/parboiled_2.12/jars/parboiled_2.12-2.1.4.jar\
+:/Users/julian/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.3.jar\
+:/Users/julian/.ivy2/cache/io.spray/spray-json_2.12/bundles/spray-json_2.12-1.3.3.jar\
+:/Users/julian/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar\
 :/Users/julian/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar:"
 
 # Project packages
@@ -99,9 +118,16 @@ playJson="/Users/julian/Projects/graal-compatibility/play-json/target/scala-2.12
 java8Compat="/Users/julian/Projects/graal-compatibility/java8Compat/target/scala-2.12/java8compat_2.12-0.1.0-SNAPSHOT.jar"
 scalaLogging="/Users/julian/Projects/graal-compatibility/scalaLogging/target/scala-2.12/scalalogging_2.12-0.1.0-SNAPSHOT.jar"
 scalajHttp="/Users/julian/Projects/graal-compatibility/scalajHttp/target/scala-2.12/scalajhttp_2.12-0.1.0-SNAPSHOT.jar"
+evoinflector="/Users/julian/Projects/graal-compatibility/evoInflector/target/scala-2.12/evoinflector_2.12-0.1.0-SNAPSHOT.jar"
+snakeYML="/Users/julian/Projects/graal-compatibility/snakeYML/target/scala-2.12/snakeyml_2.12-0.1.0-SNAPSHOT.jar"
+logstash="/Users/julian/Projects/graal-compatibility/logstash/target/scala-2.12/logstash_2.12-0.1.0-SNAPSHOT.jar"
+librato="/Users/julian/Projects/graal-compatibility/librato/target/scala-2.12/librato_2.12-0.1.0-SNAPSHOT.jar"
+jettyServer="/Users/julian/Projects/graal-compatibility/jettyServer/target/scala-2.12/jettyserver_2.12-0.1.0-SNAPSHOT.jar"
+scalaUri="/Users/julian/Projects/graal-compatibility/scalaUri/target/scala-2.12/scalauri_2.12-0.1.0-SNAPSHOT.jar"
+parserCombinators="/Users/julian/Projects/graal-compatibility/parserCombinators/target/scala-2.12/parsercombinators_2.12-0.1.0-SNAPSHOT.jar"
 
 # TESTING
-currentlyTesting=$slick
+currentlyTesting=$parserCombinators
 
 echo -e "${RED}Packaging...${NC}"
 # sbt clean

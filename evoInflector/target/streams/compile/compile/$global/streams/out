@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/julian/Projects/graal-compatibility/evoInflector/src/main/scala/Main.scala:1:8: not found: object scalaj[0m
+[0m[[0m[31merror[0m] [0m[0mimport scalaj.http._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/julian/Projects/graal-compatibility/evoInflector/src/main/scala/Main.scala:6:19: not found: type HttpResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val response: HttpResponse[String] = Http("https://jsonplaceholder.typicode.com/todos/1").asString[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/julian/Projects/graal-compatibility/evoInflector/src/main/scala/Main.scala:6:42: not found: value Http[0m
+[0m[[0m[31merror[0m] [0m[0m    val response: HttpResponse[String] = Http("https://jsonplaceholder.typicode.com/todos/1").asString[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

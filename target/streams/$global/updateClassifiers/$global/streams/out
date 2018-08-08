@@ -283,11 +283,11 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] jline#jline;2.14.4!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.3!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.3!scala-library.jar(src)
-[debug] :: resolution report :: resolve 36ms :: artifacts dl 2ms
+[debug] 	[NOT REQUIRED] jline#jline;2.14.4!jline.jar(src)
+[debug] :: resolution report :: resolve 32ms :: artifacts dl 2ms
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT compile produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-compile.xml
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT runtime produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-runtime.xml
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT test produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-test.xml
@@ -299,4 +299,4 @@
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT plugin produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-plugin.xml
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT pom produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-pom.xml
 [debug] 	report for graal-compatibility#graal-compatibility$sources;0.1.0-SNAPSHOT scala-tool produced in /Users/julian/Projects/graal-compatibility/target/scala-2.12/resolution-cache/reports/graal-compatibility-graal-compatibility$sources-scala-tool.xml
-[debug] 	resolve done (36ms resolve - 2ms download)
+[debug] 	resolve done (32ms resolve - 2ms download)

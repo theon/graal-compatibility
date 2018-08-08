@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180808142029"/>
+		date="20180808175756"/>
 	<dependencies>
 		<module organisation="com.rabbitmq" name="amqp-client">
 			<revision name="4.1.0" status="release" pubdate="20170220095216" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.rabbitmq.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
