@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="graal-compatibility_7955,graal-compatibility,MariaDb,graal-compatibility-playJson,mysql,librato,playJson,finagle,scalaUri,scalajHttp,slick,mariaDb,parserCombinators,other,evoInflector,snakeYML,root,amqp,java8Compat,scalaLogging,jwt,logstash,jettyServer,postgres" />
+    <profile name="sbt 1" modules="graal-compatibility_7955,graal-compatibility,MariaDb,graal-compatibility-playJson,playJson,mariaDb,postgres,jettyServer,slick,finagle,amqp,evoInflector,root,scalaLogging,librato,mysql,java8Compat,snakeYML,akka,logstash,parserCombinators,scalaUri,jwt,scalajHttp,other" />
   </component>
 </project>

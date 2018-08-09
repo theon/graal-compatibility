@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka.iml" filepath="$PROJECT_DIR$/.idea/modules/akka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-build.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/evoInflector.iml" filepath="$PROJECT_DIR$/.idea/modules/evoInflector.iml" />

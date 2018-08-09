@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/akka" />
+            <option value="$PROJECT_DIR$/akka/project" />
             <option value="$PROJECT_DIR$/amqp" />
             <option value="$PROJECT_DIR$/amqp/project" />
             <option value="$PROJECT_DIR$/evoInflector" />

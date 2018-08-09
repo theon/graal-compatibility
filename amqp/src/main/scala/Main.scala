@@ -12,11 +12,11 @@ object Main {
     //I need to include another .jar for comptibility. Leaving for now.
 
 
-//    val factory = new ConnectionFactory
-//    val conn = factory.newConnection
-//    val channel = conn.createChannel
-//    channel.close
-//    conn.close
+    val factory = new ConnectionFactory
+    val conn = factory.newConnection
+    val channel = conn.createChannel
+    channel.close
+    conn.close
 
 
   }

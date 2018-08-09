@@ -3,9 +3,8 @@ scalaVersion := "2.12.3"
 
 import Dependencies.{scalaLogging, _}
 import sbt.Keys.managedDirectory
+
 val dependencies = taskKey[Seq[File]]("copy dependencies")
-
-
 def myProject(name: String) = Project(name, file(s"./$name")).settings(
   managedDirectory := target.value / "lib_managed",
   dependencies := {
@@ -22,7 +21,6 @@ def myProject(name: String) = Project(name, file(s"./$name")).settings(
     }
   }
 )
-
 
 
 val postgres = myProject("postgres").settings(libraryDependencies ++= Seq(
@@ -101,6 +99,9 @@ val parserCombinators = Project("parserCombinators", file("./parserCombinators")
   Dependencies.parserCombinators
 ))
 
+val akka = Project("akka", file("./akka")).settings(libraryDependencies ++= Seq (
+  Dependencies.akka
+))
 
 val other = Project("other", file("./other")).settings(libraryDependencies ++= Seq(
   jodaTime,
@@ -138,6 +139,7 @@ lazy val root = (project in file("."))
     jettyServer,
     scalaUri,
     parserCombinators,
+    akka,
     other
   ).dependsOn(
     mariaDb,
@@ -158,6 +160,7 @@ lazy val root = (project in file("."))
     jettyServer,
     scalaUri,
     parserCombinators,
+    akka,
     other
   )
   .settings(

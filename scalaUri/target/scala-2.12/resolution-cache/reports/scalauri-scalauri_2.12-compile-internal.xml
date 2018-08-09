@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180809135012"/>
+		date="20180809165306"/>
 	<dependencies>
 		<module organisation="io.lemonlabs" name="scala-uri_2.12">
 			<revision name="1.1.1" status="release" pubdate="20180314231516" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemonlabsuk/scala-uri" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">

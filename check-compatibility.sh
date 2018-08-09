@@ -1,4 +1,5 @@
 #!/bin/bash
+# INSTUCTIONS
 
 # PROJECT PACKAGES
 postgres="/Users/julian/Projects/graal-compatibility/postgres/target/scala-2.12/postgres_2.12-0.1.0-SNAPSHOT.jar"
@@ -19,12 +20,13 @@ librato="/Users/julian/Projects/graal-compatibility/librato/target/scala-2.12/li
 jettyServer="/Users/julian/Projects/graal-compatibility/jettyServer/target/scala-2.12/jettyserver_2.12-0.1.0-SNAPSHOT.jar"
 scalaUri="/Users/julian/Projects/graal-compatibility/scalaUri/target/scala-2.12/scalauri_2.12-0.1.0-SNAPSHOT.jar"
 parserCombinators="/Users/julian/Projects/graal-compatibility/parserCombinators/target/scala-2.12/parsercombinators_2.12-0.1.0-SNAPSHOT.jar"
+amqp="/Users/julian/Projects/graal-compatibility/amqp/target/scala-2.12/amqp_2.12-0.1.0-SNAPSHOT.jar"
+akka="/Users/julian/Projects/graal-compatibility/akka/target/scala-2.12/akka_2.12-0.1.0-SNAPSHOT.jar"
 
-#projects=($postres $mariaDb $mysql $other $finagle $slick $jwt $playJson $java8Compat $scalaLogging $scalajHttp $evoInflector $snakeYML $logstash $librato $jettyServer $scalaUri $parserCombinators)
-projects=($librato $jettyServer)
+projects=($akka $amqp $postgres $mariaDb $mysql $other $finagle $slick $jwt $playJson $java8Compat $scalaLogging $scalajHttp $evoInflector $snakeYML $logstash $librato $jettyServer $scalaUri $parserCombinators)
+# projects=($akka)
 
 # UTILS
-
 ################################################################################
 # from https://unix.stackexchange.com/questions/43340/how-to-introduce-timeout-for-shell-scripting
 # Executes command with a timeout
@@ -33,26 +35,25 @@ projects=($librato $jettyServer)
 #   $2 command
 # Returns 1 if timed out 0 otherwise
 timeout() {
-
     time=$1
-
     # start the command in a subshell to avoid problem with pipes
     # (spawn accepts one command)
     command="/bin/sh -c \"$2\""
-
     expect -c "set echo \"-noecho\"; set timeout $time; spawn -noecho $command; expect timeout { exit 1 } eof { exit 0 }"
 
     if [ $? = 1 ] ; then
         echo "Timeout after ${time} seconds"
     fi
-
 }
 
 print () {
   #Colors!
   RED='\033[0;31m'
   NC='\033[0m' # No Color
+  echo
+  echo
   echo -e "${RED}$1${NC}"
+  echo
 }
 
 contains-element () {
@@ -66,13 +67,20 @@ check-project () {
   currentlyTesting=$1
   CLASSPATHS=$2
 
-  print "Building..."
+  print "Building WITH ReportUnsupportedElementsAtRuntime flag..."
   rm -rf main
-  rm-rf results.txt
-  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main -H:+ReportUnsupportedElementsAtRuntime | tee -a results.txt
+  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main -H:+ReportUnsupportedElementsAtRuntime
   echo
   print "Running..."
-  timeout 10 "./main | tee -a results.txt"
+  timeout 10 "./main"
+  echo
+
+  print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
+  rm -rf main
+  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
+  echo
+  print "Running..."
+  timeout 10 "./main"
   echo
 }
 
@@ -80,9 +88,12 @@ check-all-projects () {
   CLASSPATHS=$1
 
   for project in ${projects[@]}; do
-    echo $project
-    echo $CLASSPATHS
+    echo '########################################################################################################'
+    print "Testing "$project
+    echo '########################################################################################################'
     check-project $project $CLASSPATHS
+    print 'Done'
+    echo '########################################################################################################'
   done
 }
 
@@ -106,18 +117,7 @@ for file in $target*; do
 done
 
 # RUN TESTS
-project=$1
-# if [contains-element "$project" "${projects[@]}"]; then
-#   check-project "/Users/julian/Projects/graal-compatibility/librato/target/scala-2.12/librato_2.12-0.1.0-SNAPSHOT.jar" $classpaths
-# fi
-
-# [ $2 == 'yes' ]
-
-if [ $project = 'all' ]; then
-  print "Testing all projects..."
-  check-all-projects $classpaths
-fi
-
-# check-project "/Users/julian/Projects/graal-compatibility/librato/target/scala-2.12/librato_2.12-0.1.0-SNAPSHOT.jar" $classpaths
-
+print "Testing projects..."
+rm -rf results.txt
+check-all-projects $classpaths 2>&1 | tee -a results.txt #>>results.txt 2>&1
 print "Competed in $SECONDS ✅"

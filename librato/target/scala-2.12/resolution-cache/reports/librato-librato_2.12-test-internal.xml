@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180809135013"/>
+		date="20180809165303"/>
 	<dependencies>
 		<module organisation="ch.qos.logback" name="logback-classic">
 			<revision name="1.1.7" status="release" pubdate="20160329222502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
