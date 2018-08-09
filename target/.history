@@ -68,4 +68,8 @@ exit
 exit
 ;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/cw/kyk2dr114rb6gw8kwnqhs68m0000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/julian/Library/Application Support/IntelliJIdea2018.1/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
 exit
+<<<<<<< HEAD
 project postgres
+=======
+dependencies
+>>>>>>> 132365823be290c0ecb34d01b8b3576d2d8264bc

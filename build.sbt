@@ -2,6 +2,7 @@ name := "graal-compatibility"
 scalaVersion := "2.12.3"
 
 import Dependencies.{scalaLogging, _}
+import sbt.Keys.managedDirectory
 val dependencies = taskKey[Seq[File]]("copy dependencies")
 
 
@@ -137,7 +138,42 @@ lazy val root = (project in file("."))
     jettyServer,
     scalaUri,
     parserCombinators,
-    other)
+    other
+  ).dependsOn(
+    mariaDb,
+    postgres,
+    mysql,
+    slick,
+    finagle,
+    jwt,
+    playJson,
+    amqp,
+    java8Compat,
+    scalaLogging,
+    scalajHttp,
+    evoInflector,
+    snakeYML,
+    logstash,
+    librato,
+    jettyServer,
+    scalaUri,
+    parserCombinators,
+    other
+  )
   .settings(
-    publish := { } // do not publish a JAR for the root project
+    publish := { }, // do not publish a JAR for the root project
+    managedDirectory := target.value / "lib_managed",
+    dependencies := {
+      val baseDir = baseDirectory.value
+      val managedDir = managedDirectory.value
+      dependencyClasspath.in(Compile).value.toVector.flatMap { dep =>
+        dep.data.relativeTo(baseDir).orElse {
+          // For some reason sbt sometimes decides to use the scala-library from `~/.sbt/boot` (which is outside of the project dir)
+          // As a workaround we copy the file in lib_managed and use the copy instead (shouldn't cause name collisions)
+          val inManaged = managedDir / dep.data.name
+          IO.copy(Seq(dep.data → inManaged))
+          inManaged.relativeTo(baseDir)
+        }
+      }
+    }
   )
