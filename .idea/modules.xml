@@ -2,30 +2,43 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/amqp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/amqp-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/evoInflector.iml" filepath="$PROJECT_DIR$/.idea/modules/evoInflector.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/evoInflector-build.iml" filepath="$PROJECT_DIR$/.idea/modules/evoInflector-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/finagle.iml" filepath="$PROJECT_DIR$/.idea/modules/finagle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/finagle-build.iml" filepath="$PROJECT_DIR$/.idea/modules/finagle-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java8Compat.iml" filepath="$PROJECT_DIR$/.idea/modules/java8Compat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java8Compat-build.iml" filepath="$PROJECT_DIR$/.idea/modules/java8Compat-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jettyServer.iml" filepath="$PROJECT_DIR$/.idea/modules/jettyServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jettyServer-build.iml" filepath="$PROJECT_DIR$/.idea/modules/jettyServer-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jwt.iml" filepath="$PROJECT_DIR$/.idea/modules/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jwt-build.iml" filepath="$PROJECT_DIR$/.idea/modules/jwt-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/librato.iml" filepath="$PROJECT_DIR$/.idea/modules/librato.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/librato-build.iml" filepath="$PROJECT_DIR$/.idea/modules/librato-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/logstash.iml" filepath="$PROJECT_DIR$/.idea/modules/logstash.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/logstash-build.iml" filepath="$PROJECT_DIR$/.idea/modules/logstash-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mariaDb.iml" filepath="$PROJECT_DIR$/.idea/modules/mariaDb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mariaDb-build.iml" filepath="$PROJECT_DIR$/.idea/modules/mariaDb-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mysql.iml" filepath="$PROJECT_DIR$/.idea/modules/mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mysql-build.iml" filepath="$PROJECT_DIR$/.idea/modules/mysql-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/other.iml" filepath="$PROJECT_DIR$/.idea/modules/other.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/other-build.iml" filepath="$PROJECT_DIR$/.idea/modules/other-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/parserCombinators.iml" filepath="$PROJECT_DIR$/.idea/modules/parserCombinators.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/parserCombinators-build.iml" filepath="$PROJECT_DIR$/.idea/modules/parserCombinators-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/playJson.iml" filepath="$PROJECT_DIR$/.idea/modules/playJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/playJson-build.iml" filepath="$PROJECT_DIR$/.idea/modules/playJson-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/postgres.iml" filepath="$PROJECT_DIR$/.idea/modules/postgres.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/postgres-build.iml" filepath="$PROJECT_DIR$/.idea/modules/postgres-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLogging.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLogging.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaLogging-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaLogging-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaUri.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaUri.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalaUri-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalaUri-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalajHttp.iml" filepath="$PROJECT_DIR$/.idea/modules/scalajHttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalajHttp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalajHttp-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slick.iml" filepath="$PROJECT_DIR$/.idea/modules/slick.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/slick-build.iml" filepath="$PROJECT_DIR$/.idea/modules/slick-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/snakeYML.iml" filepath="$PROJECT_DIR$/.idea/modules/snakeYML.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/snakeYML-build.iml" filepath="$PROJECT_DIR$/.idea/modules/snakeYML-build.iml" />
