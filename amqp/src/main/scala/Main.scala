@@ -1,4 +1,4 @@
-import com.rabbitmq.client.ConnectionFactory
+import com.rabbitmq.client.{BuiltinExchangeType, ConnectionFactory}
 
 object Main {
   def main(args: Array[String]) = {
@@ -15,6 +15,9 @@ object Main {
     val factory = new ConnectionFactory
     val conn = factory.newConnection
     val channel = conn.createChannel
+
+    channel.exchangeDeclare("test-exchange", BuiltinExchangeType.DIRECT, true)
+
     channel.close
     conn.close
 
