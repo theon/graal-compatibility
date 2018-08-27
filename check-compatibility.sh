@@ -69,7 +69,7 @@ check-project () {
 
   print "Building WITH ReportUnsupportedElementsAtRuntime flag..."
   rm -rf main
-  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main -H:+ReportUnsupportedElementsAtRuntime
+  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:IncludeResources=public_suffix_trie\\.json -H:Class=Main -H:+ReportUnsupportedElementsAtRuntime
   echo
   print "Running..."
   timeout 10 "./main"
@@ -77,7 +77,7 @@ check-project () {
 
   print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
   rm -rf main
-  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
+  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:IncludeResources=public_suffix_trie\\.json -H:Class=Main
   echo
   print "Running..."
   timeout 10 "./main"
