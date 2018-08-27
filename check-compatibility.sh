@@ -18,12 +18,12 @@ snakeYML="/Users/julian/Projects/graal-compatibility/snakeYML/target/scala-2.12/
 logstash="/Users/julian/Projects/graal-compatibility/logstash/target/scala-2.12/logstash_2.12-0.1.0-SNAPSHOT.jar"
 librato="/Users/julian/Projects/graal-compatibility/librato/target/scala-2.12/librato_2.12-0.1.0-SNAPSHOT.jar"
 jettyServer="/Users/julian/Projects/graal-compatibility/jettyServer/target/scala-2.12/jettyserver_2.12-0.1.0-SNAPSHOT.jar"
-scalaUri="/Users/julian/Projects/graal-compatibility/scalaUri/target/scala-2.12/scalauri_2.12-0.1.0-SNAPSHOT.jar"
+scalaUri="/work/graal-compatibility/scalaUri/target/scala-2.12/scalauri_2.12-0.1.0-SNAPSHOT.jar"
 parserCombinators="/Users/julian/Projects/graal-compatibility/parserCombinators/target/scala-2.12/parsercombinators_2.12-0.1.0-SNAPSHOT.jar"
 amqp="/Users/julian/Projects/graal-compatibility/amqp/target/scala-2.12/amqp_2.12-0.1.0-SNAPSHOT.jar"
 akka="/Users/julian/Projects/graal-compatibility/akka/target/scala-2.12/akka_2.12-0.1.0-SNAPSHOT.jar"
 
-projects=($akka $amqp $postgres $mariaDb $mysql $other $finagle $slick $jwt $playJson $java8Compat $scalaLogging $scalajHttp $evoInflector $snakeYML $logstash $librato $jettyServer $scalaUri $parserCombinators)
+projects=($scalaUri)
 # projects=($akka)
 
 # UTILS
@@ -75,13 +75,13 @@ check-project () {
   timeout 10 "./main"
   echo
 
-  print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
-  rm -rf main
-  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
-  echo
-  print "Running..."
-  timeout 10 "./main"
-  echo
+  # print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
+  # rm -rf main
+  # native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
+  # echo
+  # print "Running..."
+  # timeout 10 "./main"
+  # echo
 }
 
 check-all-projects () {
