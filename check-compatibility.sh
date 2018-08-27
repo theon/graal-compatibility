@@ -75,13 +75,13 @@ check-project () {
   timeout 10 "./main"
   echo
 
-  # print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
-  # rm -rf main
-  # native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
-  # echo
-  # print "Running..."
-  # timeout 10 "./main"
-  # echo
+  print "Building WITHOUT ReportUnsupportedElementsAtRuntime flag..."
+  rm -rf main
+  native-image --verbose -cp "$CLASSPATHS""$currentlyTesting" -H:Class=Main
+  echo
+  print "Running..."
+  timeout 10 "./main"
+  echo
 }
 
 check-all-projects () {
